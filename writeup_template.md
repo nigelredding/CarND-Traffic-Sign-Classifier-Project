@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./histogram.png "Histogram"
 [image2]: ./gray.jpg "Grayscaling"
 [image3]: ./normalized.jpg "normalized"
-[imageO]: ./orignal.jpg "original"
+[imageO]: ./original.jpg "original"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
