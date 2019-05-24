@@ -82,21 +82,21 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x1 grayscale   							|
-| Convolution           |                                               |
+| Convolution           | Input 32x32x1, Output 28x28x32                |
 | RELU              	|                                               |
-| Max Pooling			|												|
-| Convolution       	|                                				|
-| RELU                  | etc.      									|
-| Max Pooling           | etc.        									|
-| Flatten				| etc.        									|
-| Dropout				|												|
-| Dense 			    |										        |
+| Max Pooling			| Input 28x28x32, Output 14x14x32				|
+| Convolution       	| Input 14x14x32, Output 10x10x64               |
+| RELU                  |      									        |
+| Max Pooling           | Input = 10x10x64, Output = 5x5x64.        	|
+| Flatten				| Input = 5x5x64, Output = 1600.        		|
+| Dropout				|	.											|
+| Dense 			    |	Input = 1600, Output = 120					|
 | RELU					|												|
 | Dropout				|												|
-| Dense 			    |										        |
+| Dense 			    |	Input = 120, output = 84					|
 | RELU					|												|
 | Dropout				|												|
-| Dense					|												|
+| Dense					|	Input = 84, Output = 43						|
 
 
  
