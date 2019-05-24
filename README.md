@@ -74,6 +74,10 @@ Finally, we normalize the image. Unfortunately, the image appears almost entirel
 
 ![alt text][image3]
 
+The reason I chose to use grayscale to preprocess the images was that I did not feel that the color was relevant to the classification of the traffic signs.
+
+I chose to normalize the data as I found that my model performed better with normalized data.
+
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
