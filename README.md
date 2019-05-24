@@ -45,7 +45,7 @@ This is my writeup, and my project notebook is [here](https://github.com/nigelre
 
 In the second cell of my notebook, I printed out the following information about our data (training, testing and validation data):
 
-* The size of training set is 12630
+* The size of training set is 34799
 * The size of the validation set is 4410
 * The size of test set is 12630
 * The shape of a traffic sign image is (32, 32, 3)
