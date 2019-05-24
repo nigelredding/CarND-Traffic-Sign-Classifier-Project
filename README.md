@@ -109,9 +109,9 @@ I minimized the cross entropy using the Adam optimizer. I ran for 25 epochs, use
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 0.995
-* validation set accuracy of 0.939 
-* test set accuracy of 0.935
+* training set accuracy of 0.998
+* validation set accuracy of 0.980 
+* test set accuracy of 0.906
 
 The first approach I took was simply to copy the LeNet architecture. I found that this never performed any better than 91% on the validation set. I chose to add a dropout later after the flattening operation, and found that slightly improved performance. After adding two "Dense -> RELU -> Dropout" layers, I found that I consistently got a performance of at least 93% on the validation set.
 
@@ -155,54 +155,52 @@ First sign (Stop sign):
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-|  0.7897385358810425   | Stop sign   									| 
-|  0.08681245893239975  | Speed limit (30km/h) 							|
-|  0.0808633342385292	| Road work										|
-|  0.01834932155907154	| Speed limit (50km/h)					 		|
-|  0.00982978567481041  | Keep right      						    	|
+|  0.9999884366989136   | Stop sign   									| 
+|5.4538154472538736e-06 | Speed limit (30km/h) 							|
+|2.8945223675691523e-06	| Turn left ahead								|
+|2.3776767648087116e-06 | Yield					                		|
+|4.998565827918355e-07  | Speed limit (50km/h)      			    	|
 
 Speed limit (100km/h):
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-|  0.2551559805870056   | Vehicles over 3.5 metric tons prohibited  	| 
-|  0.2095341980457306   | Speed limit (120km/h) 						|
-|  0.14357756078243256	| Speed limit (100km/h)							|
-|  0.08315367996692657	| Speed limit (80km/h)					 		|
-|  0.05115620419383049  | Speed limit (60km/h)      				   	|
+|  0.7623458504676819   | Speed limit (80km/h)  	                    | 
+|  0.1487751007080078   | Vehicles over 3.5 metric tons prohibited 		|
+|  0.05825525149703026	| No passing for vehicles over 3.5 metric tons	|
+|  0.009625362232327461	| Speed limit (100km/h)					 		|
+|  0.00924014113843441  | Speed limit (60km/h)      				   	|
 
 No Entry:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 |  1.0                  | No entry  	                                | 
-|2.3170337176692257e-12 | Stop sign 						            |
-|5.464088925245802e-13  | Speed limit (20km/h)							|
-|1.5820390787332772e-13 | Speed limit (70km/h)					 		|
-|6.108233087083817e-14  | Double curve      				        	|
+|1.3217007349686227e-11 | Speed limit (20km/h) 					        |
+|8.233778242550116e-13  | Go straight or left							|
+|2.4248215468956197e-14 | Stop              					 		|
+|2.4032408414654746e-14 | Speed limit (120km/h)      				    |
 
 Ahead only:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 |  1.0                  | Ahead only  	                                | 
-|1.073038990995201e-09  | Go straight or left 						    |
-|7.987681627241727e-10  | Children crossing 							|
-|4.554804311496241e-10  | Yield             					 		|
-|3.070668996851822e-10  | Speed limit (60km/h)      		        	|
+|1.017736390469521e-17  | Go straight or right 						    |
+|1.50526334141005e-19   | No passing        							|
+|4.2008095989867017e-20 | Go straight or left             				|
+|1.505641582669837e-20  | Yield                     		        	|
 
 Yield:
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 |  1.0                  | Yield     	                                | 
-|7.1156262305971385e-12 | Ahead only 			        			    |
-|2.650783021904135e-12  | Bumpy road  			        				|
-|4.684419085271285e-13  | Keep right             						|
-|4.411807562072073e-13  | No vehicles      		                    	|
+|1.5241646877318883e-25 | Ahead only 			        			    |
+|2.0782129169411435e-26 | No vehicles  			        				|
+|1.3011873904887757e-26 | No passing             						|
+|1.2123431834945762e-29 | Speed limit (60km/h)      	            	|
 
-
-For the second image ... 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
