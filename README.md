@@ -150,38 +150,6 @@ The code for making predictions on my final model is located in the final cell o
 
 The predictions for each sign from the web, along with the given softmax probabilities is given below:
 Our softmax probabilities are given by: 
-Stop :
-	 Stop ( 0.7897385358810425 )
-	 Speed limit (30km/h) ( 0.08681245893239975 )
-	 Road work ( 0.0808633342385292 )
-	 Speed limit (50km/h) ( 0.01834932155907154 )
-	 Keep right ( 0.00982978567481041 )
-     
-Speed limit (100km/h) :
-	 Vehicles over 3.5 metric tons prohibited ( 0.2551559805870056 )
-	 Speed limit (120km/h) ( 0.2095341980457306 )
-	 Speed limit (100km/h) ( 0.14357756078243256 )
-	 Speed limit (80km/h) ( 0.08315367996692657 )
-	 Speed limit (60km/h) ( 0.05115620419383049 )
-No entry :
-	 No entry ( 1.0 )
-	 Stop ( 2.3170337176692257e-12 )
-	 Speed limit (20km/h) ( 5.464088925245802e-13 )
-	 Speed limit (70km/h) ( 1.5820390787332772e-13 )
-	 Double curve ( 6.108233087083817e-14 )
-Ahead only :
-	 Ahead only ( 1.0 )
-	 Go straight or left ( 1.073038990995201e-09 )
-	 Children crossing ( 7.987681627241727e-10 )
-	 Yield ( 4.554804311496241e-10 )
-	 Speed limit (60km/h) ( 3.070668996851822e-10 )
-Yield :
-	 Yield ( 1.0 )
-	 Ahead only ( 7.1156262305971385e-12 )
-	 Bumpy road ( 2.650783021904135e-12 )
-	 Keep right ( 4.684419085271285e-13 )
-	 No vehicles ( 4.411807562072073e-13 )
-
 
 First sign (Stop sign):
 
